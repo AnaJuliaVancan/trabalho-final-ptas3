@@ -1,0 +1,12 @@
+{
+  "name": "trabalho-final-ptas3",
+  "version": "1.0.0",
+  "description": "Trabalho Final semestre 6 - Info",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "serve ."
+  },
+  "author": "Ana Júlia Benedito Vancan",
+  "license": "ISC"
+}
