@@ -3,3 +3,10 @@
     margin-top: 10%;
     margin-bottom: 10%;
 }
+
+#text{
+    float: right;
+    margin-left: 50%;
+    margin-right:10%;
+    margin-top: -35%;
+}

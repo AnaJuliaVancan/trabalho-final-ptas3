@@ -1,5 +1,5 @@
 let cacheName = "trabalho-final";
-let filesToCache = ["/", "/index.html", 
+let filesToCache = ["/", "/index.html", "/visualizar.html",
                 "/css/style.css", "/js/main.js", "https://fonts.googleapis.com/css?family=Poppins&display=swap",
                 "/pages/fallback.html"];
 
