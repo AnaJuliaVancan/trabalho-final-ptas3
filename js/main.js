@@ -16,18 +16,17 @@ async function postNews() {
 
     function createArticle(article){
         return `
-               <div class="article">
-                     <div class="d-flex row">
-                         <div class="card me-4 col-4 mt-4" id="card" style="width: 18rem;">
-                            <img src="${article.img}" class="card-img-top">
-                            <div class="card-body">
-                            <h5 class="card-title">${article.titulo}</h5>
-                            <p class="card-text">${article.descricao}</p>
-                            <p class="card-text">Preço: R$ ${article.preco}</p>
-                            <a href="#" class="btn" style="background-color: #ffeaf2;"> Visualizar</a>
-                         </div>
-                      </div>
-                 </div>
+            <article>
+                <div class="card me-4 mt-4"  id="card" style="width: 18rem; min-width: 400px;">
+                 <img src="${article.img}" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">${article.titulo}</h5>
+                        <p class="card-text">${article.descricao}</p>
+                        <p class="card-text">Preço: R$ ${article.preco}</p>
+                        <a href="#" class="btn" style="background-color: #ffeaf2;"> Visualizar</a>
+                    </div>
+                </div>
+            </article>
         `
     } 
 }
