@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(174, 174, 174);
+}
+
 #card{
     margin-left: 5%;
     margin-top: 10%;
@@ -11,8 +15,34 @@
 }
 
 #text{
-    margin-left: 5%;
-    margin-right:5%;
+    margin-left: 10%;
+    margin-right:10%;
     display: inline;
     position: relative;
+}
+
+.conteudo{
+    background-color: #a18093;
+    text-align: center;
+    padding-bottom: 3%;
+    margin-top: 5%;
+}
+
+.conteudoLocalizacao{
+    font-size: 1.5em;
+}
+
+.rodape{
+    text-align: center;
+    border-radius: 5%;
+}
+
+.botao{
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#mapa{
+   margin-top: 3%;
 }
