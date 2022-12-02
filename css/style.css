@@ -4,9 +4,15 @@
     margin-bottom: 10%;
 }
 
+#carrosel{
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
 #text{
-    float: right;
-    margin-left: 50%;
-    margin-right:10%;
-    margin-top: -35%;
+    margin-left: 5%;
+    margin-right:5%;
+    display: inline;
+    position: relative;
 }

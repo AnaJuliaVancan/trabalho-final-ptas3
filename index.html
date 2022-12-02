@@ -18,36 +18,57 @@
 </head>
 <body>
     <section>
-        <nav class="navbar navbar-expand-lg" style="background-color: #a18093;">
+          <nav class="navbar navbar-expand-lg" style="background-color: #a18093;">
             <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-brand">Basic&Sweet</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse">
-                <a class="navbar-brand">Basic&Sweet</a>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="visualizar">Ver Produtos</a>
+                  </li>
                 </ul>
                 <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                   <button class="btn btn-outline-light" type="submit">Buscar</button>
                 </form>
               </div>
             </div>
           </nav>
-
-          <div>
-            <img src="https://thumbs.dreamstime.com/b/desenho-da-m%C3%A3o-do-vestido-do-manequim-75552060.jpg" class="rounded float-left">
-              <div id="text">
-                <h1>Basic&Sweet</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <a href="visualizar" class="btn btn-outline" style="background-color: #ffeaf2;">Visualizar Produtos</a>
-              </div>
-          </div>
           
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="min-width: 500px;">
+            <div class="carousel-inner" id="carrosel">
+              <div class="carousel-item active">
+                <img src="https://img.ltwebstatic.com/images3_pi/2022/08/26/1661478680e5959f9db51c607ec2a742882f2fe761_thumbnail_600x.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://img.ltwebstatic.com/images3_pi/2022/10/20/166624253079f2e12d534de1de32d5cd2257a1e0db_thumbnail_600x.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://img.ltwebstatic.com/images3_pi/2022/11/30/16697949886ba29e43998b021e11ff9c69de4b702f_thumbnail_405x552.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div id="text">
+            <h1>Basic&Sweet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="visualizar" class="btn btn-outline" style="background-color: #ffeaf2;">Visualizar Produtos</a>
+          </div>
       
           <div class="conteudo">
             <header class="cabecalhoConteudo">
-              <h2>Ver sua Localizaçao</h2>
+              <h2>Ver sua Localização</h2>
             </header>
             <div class="conteudoLocalizacao">
               <p>
@@ -64,9 +85,7 @@
       
           <div class="mapouter"><div class="gmap_canvas"><iframe id="mapa" class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=25.3076008,51.4803216&z=16&output=embed"></iframe><a href="https://piratebay-proxys.com/">Piratebay</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}</style></div>
       </iframe>
-          <footer class="rodape">
-            Progressive Web Application - Geolocation
-          </footer>
+
     </section>
  </body>
 </html>
