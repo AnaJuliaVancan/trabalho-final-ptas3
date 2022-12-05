@@ -9,9 +9,9 @@ body {
 }
 
 #carrosel{
-    width: 80%;
+    width: 50%;
     margin-top: 5%;
-    margin-left: 10%;
+    margin-left: 25%;
 }
 
 #text{
@@ -26,6 +26,9 @@ body {
     text-align: center;
     padding-bottom: 3%;
     margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .conteudoLocalizacao{
@@ -45,4 +48,9 @@ body {
 
 #mapa{
    margin-top: 3%;
+}
+
+.mapouter{
+    max-width: 300px;
+    align-self: center;
 }
