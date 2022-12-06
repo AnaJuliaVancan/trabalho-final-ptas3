@@ -2,13 +2,14 @@ let cacheName = "trabalho-final";
 let filesToCache = ["/", "/index.html", "/visualizar.html",
                 "/css/style.css", "/js/main.js", "https://fonts.googleapis.com/css?family=Poppins&display=swap",
                 "/pages/fallback.html"];
+let OFFLINE_URL = "/offline.html"
 
 /* inicializando a service worker e fazendo o 
 download do conteúdo da aplicação */
 self.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(cacheName).then(function (cache) {
-      return cache.addAll(filesToCache);
+      return cache.addAll(filesToCache, OFFLINE_URL);
     })
   );
 });
@@ -39,3 +40,4 @@ async function cacheFirst(req) {
       return await cache.match(req);
     }
   }
+

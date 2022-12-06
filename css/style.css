@@ -9,16 +9,15 @@ body {
 }
 
 #carrosel{
-    width: 50%;
+    width: 30%;
     margin-top: 5%;
-    margin-left: 25%;
+    margin-left: 35%;
 }
 
 #text{
     margin-left: 10%;
     margin-right:10%;
-    display: inline;
-    position: relative;
+    margin-top: 5%;
 }
 
 .conteudo{
@@ -35,22 +34,12 @@ body {
     font-size: 1.5em;
 }
 
-.rodape{
-    text-align: center;
-    border-radius: 5%;
-}
-
 .botao{
     padding: 15px 32px;
     text-align: center;
     font-size: 16px;
 }
 
-#mapa{
-   margin-top: 3%;
-}
-
 .mapouter{
-    max-width: 300px;
-    align-self: center;
+    margin-top: 3%;
 }

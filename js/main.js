@@ -1,15 +1,15 @@
 let url = `https://nice-rose-hare.cyclic.app/produtos`;
 const main = document.querySelector('main');
 
-window.addEventListener('load', e => {
-    postNews();
+window.addEventListener('load', (e) => {
+    fetchProdutos();
     "use strict";//restrito a funcionar em navegadores comES6 >
     if("serviceWorker" in navigator){
         navigator.serviceWorker.register("./sw.js");
     }
 }); 
 
-async function postNews() {
+async function fetchProdutos() {
     const res = await fetch(url);
     const data = await res.json();
     main.innerHTML = data.map(createArticle).join('\n');
