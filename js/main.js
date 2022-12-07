@@ -17,7 +17,7 @@ async function fetchProdutos() {
     function createArticle(article){
         return `
             <article>
-                <div class="card me-4 mt-4"  id="card" style="width: 18rem; min-width: 380px;">
+                <div class="card me-4 mt-4"  id="card" style="width: 18rem; min-width: 400px;">
                  <img src="${article.img}" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">${article.titulo}</h5>
