@@ -65,6 +65,6 @@ const erro = (error) => {//callback de error (falha para captura de localizacao)
 capturarLocalizacao.addEventListener('click', () => {
     navigator.geolocation.getCurrentPosition(sucesso, erro);
 
-    map.src = "https://maps.google.com/maps?q=" + posicaoInicial.coords.latitude + "," + posicaoInicial.coords.longitude + "&z=16&output=embed"
+    map.src = '<iframe id="mapa" class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=' + posicaoInicial.coords.latitude + "," + posicaoInicial.coords.longitude + '&z=16&output=embed></iframe>'
 
 });
